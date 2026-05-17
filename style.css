@@ -42,12 +42,20 @@ h1 {
 
 .intro-box {
     background: white;
-    max-width: 85%;
+    max-width: 900px; /* Changed from 85% to match main content width */
     margin: -2rem auto 0.3rem;
     padding: 0.8rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     position: relative;
+    box-sizing: border-box; /* Added to prevent padding from exceeding max-width */
+}
+
+/* Ensure consistent font for all intro elements */
+.intro-header,
+.intro-content,
+.intro-arrow {
+    font-family: var(--font-main);
 }
 
 /* Navigation */
