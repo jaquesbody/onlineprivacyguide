@@ -336,7 +336,7 @@ const networkData = {
         <h3>Providers:</h3>
         <ul class="providers-list">
             <li><a href="https://proton.me/vpn" target="_blank" class="provider-link">Proton VPN</a></li>
-            <li><a href="https://www.expressvpn.com" target="_blank" class="provider-link">ExpressVPN</a></li>
+            <li><a href="https://www.brave.com/firewall-vpn/" target="_blank" class="provider-link">Brave VPN</a></li>
             <li><a href="https://mullvad.net" target="_blank" class="provider-link">Mullvad</a></li>
         </ul>
 
@@ -469,8 +469,8 @@ const identityData = {
             <h3>Providers:</h3>
             <ul class="providers-list">
                 <li><a href="https://brave.com/download" target="_blank" class="provider-link">Brave Browser & Search</a></li>
-                <li><a href="https://duckduckgo.com/app/unsupported" target="_blank" class="provider-link">DuckDuckGo Browser</a></li>
-                <li><a href="https://librewolf.net/installation/windows/" target="_blank" class="provider-link">LibreWolf</a></li>
+                <li><a href="https://mullvad.net/en/browser" target="_blank" class="provider-link">Mullvad Browser</a></li>
+                <li><a href="https://torproject.org/download/" target="_blank" class="provider-link">Tor Browser</a></li>
             </ul>
             
             <div class="benefit-combined">
