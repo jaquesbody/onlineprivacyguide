@@ -7,14 +7,17 @@
     <title>Online Privacy Guide</title>
     
     <!-- 1. Standard Favicon (Browser Tab) -->
-    <link rel="icon" type="image/x-icon" sizes="512x512" href="/favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" sizes="512x512" href="/favicon.ico">
     
     <!-- 2. Apple Touch Icon (iOS Home Screen - REQUIRED) -->
     <!-- iOS ignores the manifest for the icon; it looks for this specific tag -->
     <link rel="apple-touch-icon" href="/favicon.ico">
     
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
+
+
+    <link rel="icon" type="image/x-icon" href="/favicon192.ico">
 </head>
 <body>
 
@@ -104,5 +107,26 @@
     });
   }
 </script>
+<!-- Privacy Popup Container -->
+<div id="privacy-popup" class="popup-overlay">
+    <div class="popup-content">
+        <button id="popup-close" class="popup-close" aria-label="Close">&times;</button>
+        <h3>Please note</h3>        
+        <!-- New Bullet Points -->
+        <ul style="text-align: left; margin: 0.5rem 0 1rem 1.2rem; padding: 0; color: #e0e0e0; font-size: 0.95rem;">
+            <li>this webapp was vibe coded by an absolute novice</li>
+            <li>and I'm definitely not a privacy expert</li>
+            <li>it was built for Android</li>
+            <li>it's a simplified guide for absolute beginners</li>
+            <li>I welcome any feedback (bugs, errors, grammar, improvements) - you can get in touch via 
+                <a href="https://yakihonne.com/profile/nprofile1qqsf2dn25lxa5fva9vvr28ppxzdalpmms7069mzc7922guy49c5je6q08qmyd" target="_blank" style="color: var(--primary-color); font-weight: 600;">Nostr</a>, 
+                <a href="https://x.com/@jaquesbody" target="_blank" style="color: var(--primary-color); font-weight: 600;">X</a> or 
+                <a href="https://github.com/jaquesbody" target="_blank" style="color: var(--primary-color); font-weight: 600;">GitHub</a>
+            </li>            
+            <li><a href="https://github.com/jaquesbody/onlineprivacyguide" target="_blank" style="color: var(--primary-color); font-weight: 600;">checkout the GitHub repository</a></li>
+        </ul>
+        <button id="popup-accept" class="popup-btn">Got it!</button>
+    </div>
+</div>
 </body>
 </html>

@@ -271,10 +271,16 @@ const networkData = {
     icon: "🔍",
     html: `
         <h2>Domain Name Service (DNS)</h2>
-
         <p><strong>What is it?</strong> DNS translates human-readable web addresses (e.g., www.google.com) into machine-readable IP addresses (e.g., 142.250.190.4). By default, your Internet Service Provider (ISP) (e.g., Virgin Media, BT, EE, Sky) handles this, allowing them to see every website you visit.</p>
-
-        <p><strong>What happens without it?</strong> Without a privacy-focused DNS, your ISP and default DNS providers build a complete log of your browsing history. This data can be sold to advertisers, used to throttle your connection speeds, or handed over to authorities without a warrant in some jurisdictions. The default DNS providers are usually Google's 8.8.8.8 or Cloudflare's 1.1.1.1.</p>
+        <p><strong>What about privacy?</strong> Without a privacy-focused DNS, your ISP and default DNS providers build a complete log of your browsing history. This data can be sold to advertisers, used to throttle your connection speeds, or handed over to authorities without a warrant in some jurisdictions. The default DNS providers are usually Google's 8.8.8.8 or Cloudflare's 1.1.1.1.</p>
+        
+        <h3 class="providers-heading">Providers</h3>
+        <ul class="providers-list">
+            <li><a href="https://nextdns.io" target="_blank" class="provider-link">NextDNS</a></li>
+            <li><a href="https://quad9.net" target="_blank" class="provider-link">Quad9 DNS</a></li>
+            <li><a href="https://www.cloudflare.com/en-gb/application-services/products/dns/" target="_blank" class="provider-link">Cloudflare DNS</a></li>
+        </ul>
+        
         <div class="benefit-combined">
             <strong>✅ Benefits</strong>
             <ul>
@@ -283,14 +289,7 @@ const networkData = {
                 <li>Bypasses ISP-level censorship.</li>
             </ul>
         </div>
-
-        <h3 class="providers-heading">Providers</h3>
-        <ul class="providers-list">
-            <li><a href="https://nextdns.io" target="_blank" class="provider-link">NextDNS</a></li>
-            <li><a href="https://quad9.net" target="_blank" class="provider-link">Quad9 DNS</a></li>
-            <li><a href="https://www.cloudflare.com/en-gb/application-services/products/dns/" target="_blank" class="provider-link">Cloudflare DNS</a></li>
-        </ul>
-
+        
         <p>We recommend <strong>NextDNS</strong>. It is a privacy-focused, configurable DNS provider that blocks ads, trackers, and malware at the network level.</p>
         <ul class="checklist-interactive">
             <li><input type="checkbox"> Visit <a href="https://nextdns.io" target="_blank">NextDNS.io</a> and create a free account.</li>
@@ -318,11 +317,16 @@ const networkData = {
     title: "Virtual Private Network (VPN)",
     icon: "🔒",
     html: `
-        <h2>Virtual Private Network (VPN)</h2>
-        
+        <h2>Virtual Private Network (VPN)</h2>        
         <p><strong>What is it?</strong> A VPN creates an encrypted tunnel between your device and a VPN server. All your internet traffic passes through this server, masking your real IP address and location from the websites you visit.</p>
+        <p><strong>What about privacy?</strong> Without a VPN, your ISP can see every unencrypted site you visit and can throttle your speed for specific activities (like streaming). On public Wi-Fi, hackers on the same network can intercept your data (passwords, emails) if the site doesn't use HTTPS.</p>
 
-        <p><strong>What happens without it?</strong> Without a VPN, your ISP can see every unencrypted site you visit and can throttle your speed for specific activities (like streaming). On public Wi-Fi, hackers on the same network can intercept your data (passwords, emails) if the site doesn't use HTTPS.</p>
+        <h3>Providers:</h3>
+        <ul class="providers-list">
+            <li><a href="https://proton.me/vpn" target="_blank" class="provider-link">Proton VPN</a></li>
+            <li><a href="https://www.brave.com/firewall-vpn/" target="_blank" class="provider-link">Brave VPN</a></li>
+            <li><a href="https://mullvad.net" target="_blank" class="provider-link">Mullvad</a></li>
+        </ul>
 
         <div class="benefit-combined">
             <strong>✅ Benefits</strong>
@@ -332,13 +336,6 @@ const networkData = {
                 <li>Access to geo-blocked content and prevents ISP throttling based on your activity.</li>
             </ul>
         </div>
-
-        <h3>Providers:</h3>
-        <ul class="providers-list">
-            <li><a href="https://proton.me/vpn" target="_blank" class="provider-link">Proton VPN</a></li>
-            <li><a href="https://www.brave.com/firewall-vpn/" target="_blank" class="provider-link">Brave VPN</a></li>
-            <li><a href="https://mullvad.net" target="_blank" class="provider-link">Mullvad</a></li>
-        </ul>
 
         <p>We recommend <strong>Proton VPN</strong>. It is open-source, based in Switzerland (strong privacy laws), and has a strict "No-Logs" policy.</p>
         <ul class="checklist-interactive">
@@ -368,10 +365,15 @@ const identityData = {
     icon: "📧",
     html: `
         <h2>Email & Personal Details</h2>
-        
         <p><strong>What is it?</strong> Your email is your digital identity. It links to banking, social media, and shopping accounts. Using a single email address creates a centralised target for data brokers and hackers.</p>
+        <p><strong>What about privacy?</strong> Using yourname@gmail.com everywhere means if one service is breached, attackers can use that email to try password resets on your bank, social media, and other accounts (Credential Stuffing). It also allows trackers to link your shopping habits to your email address.</p>
 
-        <p><strong>What happens without it?</strong> Using yourname@gmail.com everywhere means if one service is breached, attackers can use that email to try password resets on your bank, social media, and other accounts (Credential Stuffing). It also allows trackers to link your shopping habits to your email address.</p>
+        <h3>Providers:</h3>
+        <ul class="providers-list">
+            <li><a href="https://proton.me/mail" target="_blank" class="provider-link">Proton Mail</a></li>
+            <li><a href="https://simplelogin.io" target="_blank" class="provider-link">SimpleLogin</a></li>
+            <li><a href="https://tuta.com" target="_blank" class="provider-link">Tuta</a></li>
+        </ul>
 
         <div class="benefit-combined">
             <strong>✅ Benefits</strong>
@@ -381,13 +383,6 @@ const identityData = {
                 <li>Eliminates spam and prevents cross-site tracking via email addresses.</li>
             </ul>
         </div>
-
-        <h3>Providers:</h3>
-        <ul class="providers-list">
-            <li><a href="https://proton.me/mail" target="_blank" class="provider-link">Proton Mail</a></li>
-            <li><a href="https://simplelogin.io" target="_blank" class="provider-link">SimpleLogin</a></li>
-            <li><a href="https://tuta.com" target="_blank" class="provider-link">Tuta</a></li>
-        </ul>
 
         <p>We can recommend <strong>Proton Mail</strong>, it is end-to-end encrypted and based in Switzerland. Do not use your real name or date of birth in the registration.</p>
         <ul class="checklist-interactive">
@@ -415,6 +410,49 @@ const identityData = {
         </div>
     `
 },
+
+    "messaging": {
+        id: "messaging",
+        title: "Messaging",
+        icon: "☁️",
+        html: `
+            <h2>Messaging</h2>
+            <p><strong>What is it?</strong> Messaging apps are a gateway to many of your relationships (who you call) and your habits - when you call, where you call from and for how long.</p>
+            <p><strong>What about privacy?</strong> Over 3 billion people use WhatsApp, although they dont see your messages, they do collect a lot of data from your phone, which can be collated to build a digital profile of you to use in Meta's advertising.</p>
+
+            <h3>Providers:</h3>
+            <ul class="providers-list">
+                <li><a href="https://signal.org" target="_blank" class="provider-link">Signal</a></li>
+                <li><a href="https://simplex.chat" target="_blank" class="provider-link">SimpleX Chat</a></li>
+            </ul>
+
+            <div class="benefit-combined">
+                <strong>✅ Benefits</strong>
+                <ul>
+                    <li>No collection of your call logs or contacts.</li>
+                    <li>End-to-end encrypted messages.</li>
+                    <li>Secure messaging without revealing your phone number.</li>
+                </ul>
+            </div>
+            
+            <p>We highly recommend <strong>Signal</strong>, it feels alot like WhatsApp, it's easy to use, they can't read your messages and collect next to none of your data.</p>
+            <ul class="checklist-interactive">
+                <li><input type="checkbox">Download <a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms" target="_blank">Signal</a></li>
+                <li><input type="checkbox">Don't want to broadcast your phone number? Head to Settings > Privacy > Phone number</li>
+                <li><input type="checkbox">Run Signal alongside WhatsApp and slowly migrate people over as and when they are ready.</li>                
+            </ul>
+
+            <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem;">
+                <button class="done-btn" onclick="toggleSectionComplete(this, 'messaging')">Done</button>
+            </div>
+
+        <div class="further-reading" style="border-top: 3px solid var(--primary-color); padding-top: 1.5rem;">
+                <h3 class="providers-heading">Further reading</h3>
+                <a href="https://www.softmaker.com/en/blog/friday-chat/blog-messenger-comparison-privacy-2026" target="_blank">Messenger comparison 2026</a>
+            </div>
+        `
+    },
+
     "passwords": {
         id: "passwords",
         title: "Passwords",
@@ -422,7 +460,13 @@ const identityData = {
         html: `
             <h2>Passwords</h2>
             <p><strong>What is it?</strong> Passwords are the first line of defence. Weak or reused passwords are the cause of 80% of data breaches. A good Password Manager and Two-Factor Authentication (2FA) app makes online life easier and more secure.</p>
-            <p><strong>What happens without it?</strong> If you use an easy to guess password (e.g. Password123) or even reuse a password, a single breach on a website can lead to attackers trying that same password on your bank, email, and social media. SMS-text-based 2FA (those 6 digit confirmation codes) is also insecure and vulnerable to SIM-swapping attacks.</p>
+            <p><strong>What about privacy?</strong> If you use an easy to guess password (e.g. Password123) or even reuse a password, a single breach on a website can lead to attackers trying that same password on your bank, email, and social media. SMS-text-based 2FA (those 6 digit confirmation codes) is also insecure and vulnerable to SIM-swapping attacks.</p>
+
+            <h3>Providers:</h3>
+            <ul class="providers-list">
+                <li><a href="https://proton.me/pass" target="_blank" class="provider-link">Proton Pass</a></li>
+                <li><a href="https://bitwarden.com/products/personal/" target="_blank" class="provider-link">Bitwarden</a></li>
+            </ul>
 
             <div class="benefit-combined">
                 <strong>✅ Benefits</strong>
@@ -431,13 +475,7 @@ const identityData = {
                     <li>Every account uses a unique character random password. So if one is stolen, the others remain secure.</li>
                 </ul>
             </div>
-
-            <h3>Providers:</h3>
-            <ul class="providers-list">
-                <li><a href="https://proton.me/pass" target="_blank" class="provider-link">Proton Pass</a></li>
-                <li><a href="https://bitwarden.com/products/personal/" target="_blank" class="provider-link">Bitwarden</a></li>
-            </ul>
-
+            
             <p>We recommend <strong>Proton Pass</strong>, it's end-to-end encrypted, easy to use and can be synced between phones and laptops</p>
             <ul class="checklist-interactive">
                 <li><input type="checkbox">Download <a href="https://proton.me/pass" target="_blank">Proton Pass</a></li>
@@ -463,8 +501,8 @@ const identityData = {
         icon: "🌐",
         html: `
             <h2>Browser & Search Engine</h2>
-            <p>Your browser is the window to the internet. Default browsers like Chrome and Edge will track your browsing, sell data to advertisers and integrate AI that harvests your inputs.<br><br>
-            Default search engines will also use your search history and keystrokes, even if you dont click 'search' to train AI models and build a profile of every site you visit.</p>
+            <p><strong>What is it?</strong> Your browser is the window to the internet, it's how you access websites, email services and do your shopping. Your Search Engine is how you interact with the browser to search for online information</p>
+            <p><strong>What about privacy?</strong> Default browsers like Chrome and Edge will track your browsing, sell data to advertisers and integrate AI that harvests your inputs. Default search engines will also record and track your search history and keystrokes, even if you dont click 'search' to train AI models and build a profile of every site you visit.</p>
             
             <h3>Providers:</h3>
             <ul class="providers-list">
@@ -496,15 +534,63 @@ const identityData = {
             </div>
         `
     },
+
+    "calendar": {
+        id: "calendar",
+        title: "Calendar",
+        icon: "☁️",
+        html: `
+            <h2>Calendar</h2>
+            <p><strong>What is it?</strong> Calendars such as Google, Outlook or your defaul provider, are often accessed via your account and synced across devices. By default, the provider has full access.</p>
+            <p><strong>What happens without it?</strong> Your calendar is usually NOT encrypted, so your provider can see your schedule, any private meetings, birthdays, medical appointments or when and where you go on holiday. This can all be used to build an accurate profile of your personal life.</p>
+
+            <h3>Providers:</h3>
+            <ul class="providers-list">
+                <li><a href="https://proton.me/calendar" target="_blank" class="provider-link">Proton Calendar</a></li>
+                <li><a href="https://tuta.com/calendar" target="_blank" class="provider-link">Tuta Calendar</a></li>
+            </ul>
+
+            <div class="benefit-combined">
+                <strong>✅ Benefits</strong>
+                <ul>
+                    <li>No snooping on your personal life.</li>
+                    <li>End-to-end encrypted enteries.</li>
+                    <li>Secure sharing of meetings/appointments.</li>
+                </ul>
+            </div>
+
+            <p>We really like <strong>Proton Calendar</strong>, it's slick, easy to use, they can't see your enteries and you can easily sync between devices.</p>
+            <ul class="checklist-interactive">
+                <li><input type="checkbox"><span style="display: inline;">Download <a href="https://proton.me/calendar/download" target="_blank">Proton Calendar</a> - it's as simple as that.</span></li>
+              
+                <li><input type="checkbox">If you want to import your current calendar from Google, go to Settings > Import from Google</li>
+            </ul>
+
+            <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem;">
+                <button class="done-btn" onclick="toggleSectionComplete(this, 'calendar')">Done</button>
+            </div>
+
+        <div class="further-reading" style="border-top: 3px solid var(--primary-color); padding-top: 1.5rem;">
+                <h3 class="providers-heading">Further reading</h3>
+                <a href="https://proton.me/business/blog/appointment-scheduling" target="_blank">Secure appointment schedulling</a>
+            </div>
+        `
+    },
     "cloud": {
         id: "cloud",
         title: "Cloud Storage",
         icon: "☁️",
         html: `
-            <h2>Cloud Storage</h2>
-            
+            <h2>Cloud Storage</h2>      
             <p><strong>What is it?</strong> Cloud storage (Google Drive, OneDrive, Dropbox) stores your files on remote servers. By default, providers can scan your files for content (to serve ads or for legal compliance) and hold the encryption keys.</p>
             <p><strong>What happens without it?</strong> Providers can scan your files for "illegal content" or keywords to train their AI. If their servers are breached, your unencrypted data is exposed. Legal requests can force them to hand over your files without your knowledge.</p>
+
+            <h3>Providers:</h3>
+            <ul class="providers-list">
+                <li><a href="https://proton.me/drive" target="_blank" class="provider-link">Proton Drive</a></li>
+                <li><a href="https://tuta.com/drive" target="_blank" class="provider-link">Tuta Drive</a></li>
+                <li><a href="https://nextcloud.com/" target="_blank" class="provider-link">Nextcloud</a></li>
+            </ul>
 
             <div class="benefit-combined">
                 <strong>✅ Benefits</strong>
@@ -514,13 +600,6 @@ const identityData = {
                     <li>Secure sharing links that don't reveal your identity.</li>
                 </ul>
             </div>
-
-            <h3>Providers:</h3>
-            <ul class="providers-list">
-                <li><a href="https://proton.me/drive" target="_blank" class="provider-link">Proton Drive</a></li>
-                <li><a href="https://tuta.com/drive" target="_blank" class="provider-link">Tuta Drive</a></li>
-                <li><a href="https://nextcloud.com/" target="_blank" class="provider-link">Nextcloud</a></li>
-            </ul>
 
             <p>We recommend <strong>Proton Drive</strong>, it's slick, easy to use, they can't see your files and you can easily back up you phone photos.</p>
             <ul class="checklist-interactive">
@@ -538,13 +617,92 @@ const identityData = {
             </div>
         `
     },
+
+    "video": {
+        id: "video",
+        title: "Video Conferencing",
+        icon: "☁️",
+        html: `
+            <h2>Video Conferencing</h2>
+            <p><strong>What is it?</strong> We are all familiar with Zoom, Teams, Meets or WhatsApp video calls, they can be great to connect with family, friends or colleagues.</p>
+            <p><strong>What happens without it?</strong> Although providers often do offer an encrypted option, these are sometimes not switched on as default, do not apply to group meetings or limit the apps functionality when they are switched on.</p>
+
+            <h3>Providers:</h3>
+            <ul class="providers-list">
+                <li><a href="https://proton.me/meet" target="_blank" class="provider-link">Proton Meet</a></li>
+                <li><a href="https://talk.brave.com" target="_blank" class="provider-link">Brave Talk</a></li>
+            </ul>
+            
+            <div class="benefit-combined">
+                <strong>✅ Benefits</strong>
+                <ul>
+                    <li>No need to set up an account, just talk.</li>
+                    <li>End-to-end encrypted by default.</li>
+                    <li>No recording or tracking your calls.</li>
+                </ul>
+            </div>
+
+            <p><strong>Brave Talk</strong> is easy to use, built into the Brave browser, super private and you can screenshare too.</p>
+            <ul class="checklist-interactive">
+                <li><input type="checkbox"><span style="display: inline;">Simply visit <a href="https://talk.brave.com" target="_blank">talk.brave.com</a></span></li>
+                <li><input type="checkbox">Click the 'person +' icon to invite others via a link.</li>
+            </ul>
+
+            <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem;">
+                <button class="done-btn" onclick="toggleSectionComplete(this, 'video')">Done</button>
+            </div>
+
+        <div class="further-reading" style="border-top: 3px solid var(--primary-color); padding-top: 1.5rem;">
+                <h3 class="providers-heading">Further reading</h3>
+                <a href="https://proton.me/blog/meet-security-model" target="_blank">Secure Video Confrencing</a>
+            </div>
+        `
+    },
+
+"office": {
+        id: "office",
+        title: "Office Tools",
+        icon: "☁️",
+        html: `
+            <h2>Office Tools</h2>
+            <p><strong>What is it?</strong> Simply put, Microsoft Word and Excel (Office or 365) and Google Docs and Sheets. We've all used them to create and store important documents from letters and contracts to financial records or medical data.</p>
+            <p><strong>What happens without it?</strong> These are private documents, or so you thought, both Microsoft and Google can access their content, especially if you have 'Editor' or AI features enabled. This information can then be used to train their AI models.</p>
+
+            <h3>Providers:</h3>
+            <ul class="providers-list">
+                <li><a href="https://fileverse.io" target="_blank" class="provider-link">Fileverse</a></li>
+                <li><a href="https://onlyoffice.com" target="_blank" class="provider-link">ONLYOFFICE</a></li>
+                <li><a href="https://proton.me/drive/docs" target="_blank" class="provider-link">Proton Docs & Sheets</a></li>
+            </ul>
+
+            <div class="benefit-combined">
+                <strong>✅ Benefits</strong>
+                <ul>
+                    <li>No dependency on Big Tech.</li>
+                    <li>End-to-end encrypted documents.</li>
+                    <li>No account needed, no linked identity.</li>
+                </ul>
+            </div>
+
+            <p>For compatability and familiarity we recommend <strong>ONLYOFFICE</strong>.</p>
+            <ul class="checklist-interactive">
+                <li><input type="checkbox">Download <a href="https://www.onlyoffice.com/download-desktop" target="_blank">ONLYOFFICE</a></li>
+                <li><input type="checkbox">If you prefer Microsoft or Google, check your settings for 'Editor' or AI features.</li>
+                <li><input type="checkbox">Move sensitive files to a local drive, disable OneDrive or use an encrypted cloud service.</li>
+            </ul>
+
+            <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem;">
+                <button class="done-btn" onclick="toggleSectionComplete(this, 'office')">Done</button>
+            </div>
+        `
+    },
+
     "ai": {
         id: "ai",
         title: "AI",
         icon: "🤖",
         html: `
             <h2>Artificial Intelligence</h2>
-
             <p>Modern AI features (e.g. Copilot, Gemini, OpenAI, Claude) are constantly listening, reading and using your data to train their models, scraped from your personal emails, photos, private messages, documents and all your conversations/chat logs. Many of these 'Smart' features are ON as default, hidden deep in Settings, with new capabilities enabled whenever you update your software, without your explicit consent.</p>
 
             <p><strong>How to limit AI's reach</strong></p>
@@ -555,6 +713,13 @@ const identityData = {
                 <li><input type="checkbox">Private AI: Use Brave's AI - Leo - (its built in to their browser) which is designed to not store your chat history for training.</li>
             </ul>
 
+            <h3>Providers:</h3>
+            <ul class="providers-list">
+                <li><a href="https://brave.com/leo/" target="_blank" class="provider-link">Brave Leo AI</a></li>
+                <li><a href="https://venice.ai/chat" target="_blank" class="provider-link">Venice AI</a></li>
+                <li><a href="https://www.trymaple.ai/" target="_blank" class="provider-link">Maple AI</a></li>
+            </ul>
+            
             <div class="benefit-combined">
                 <strong>✅ Benefits</strong>
                 <ul>
@@ -563,18 +728,11 @@ const identityData = {
                 </ul>
             </div>
 
-            <h3>Providers:</h3>
-            <ul class="providers-list">
-                <li><a href="https://brave.com/leo/" target="_blank" class="provider-link">Brave Leo AI</a></li>
-                <li><a href="https://venice.ai/chat" target="_blank" class="provider-link">Venice AI</a></li>
-                <li><a href="https://www.trymaple.ai/" target="_blank" class="provider-link">Maple AI</a></li>
-            </ul>
-
             <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem;">
                 <button class="done-btn" onclick="toggleSectionComplete(this, 'ai')">Done</button>
             </div>
 
-        <div class="further-reading" style="border-top: 3px solid var(--primary-color); padding-top: 1.5rem;">
+            <div class="further-reading" style="border-top: 3px solid var(--primary-color); padding-top: 1.5rem;">
                 <h3 class="providers-heading">Further reading</h3>
                 <a href="https://brave.com/leo" target="_blank">Brave Leo AI Privacy</a>
             </div>
@@ -1002,3 +1160,31 @@ document.addEventListener('DOMContentLoaded', () => {
     
     alert('Calendar reminders opened! Create each one in your calendar app.');
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('privacy-popup');
+    const closeBtn = document.getElementById('popup-close');
+    const acceptBtn = document.getElementById('popup-accept');
+    const popupId = 'privacy-popup-accepted';
+
+    // Show popup if user hasn't accepted yet
+// TEMPORARILY DISABLED FOR TESTING: Remove the // below to re-enable memory
+// if (!localStorage.getItem(popupId)) {
+    setTimeout(() => {
+        popup.classList.add('active');
+    }, 500);
+// }
+
+    // Close actions
+    const closePopup = () => {
+        popup.classList.remove('active');
+        localStorage.setItem(popupId, 'true');
+    };
+
+    closeBtn.addEventListener('click', closePopup);
+    acceptBtn.addEventListener('click', closePopup);
+
+    // Close on outside click
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) closePopup();
+    });
+});
