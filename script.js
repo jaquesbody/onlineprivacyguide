@@ -1168,7 +1168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show popup if user hasn't accepted yet
 // TEMPORARILY DISABLED FOR TESTING: Remove the // below to re-enable memory
-// if (!localStorage.getItem(popupId)) {
+    if (!localStorage.getItem(popupId)) {
     setTimeout(() => {
         popup.classList.add('active');
     }, 500);
